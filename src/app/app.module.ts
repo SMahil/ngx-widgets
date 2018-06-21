@@ -16,6 +16,7 @@ import {
 } from './github-link-area/examples/github-link-area-example.module';
 import { HomeModule } from './home/home.module';
 import { MarkdownExampleModule } from './markdown/examples/markdown-example.module';
+import { MessageExampleModule } from './message/examples/message-example.module';
 import { SlideOutExampleModule } from './slide-out-panel/examples/slide-out-example.module';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { SlideOutExampleModule } from './slide-out-panel/examples/slide-out-exam
     GitHubLinkAreaExampleModule,
     HomeModule,
     MarkdownExampleModule,
+    MessageExampleModule,
     SlideOutExampleModule,
   ],
   declarations: [

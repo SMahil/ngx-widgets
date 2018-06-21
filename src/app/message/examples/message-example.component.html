@@ -1,0 +1,17 @@
+<section>
+  <h4>Message Example</h4>
+  <message [message]="content"
+    [msgEditAction]="!msgEditAction"
+    [msgReplyAction]="msgReplyAction"
+    [msgDeleteAction]="!msgDeleteAction">
+  </message>
+</section>
+<section>
+  <h4>Message Example with placeholder</h4>
+  <message [message]="" 
+    [placeholder]="'Enter your text here'"
+    [msgEditAction]="msgEditAction"
+    [msgReplyAction]="!msgReplyAction"
+    [msgDeleteAction]="msgDeleteAction">
+  </message>
+</section>

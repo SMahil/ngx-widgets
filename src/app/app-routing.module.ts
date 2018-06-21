@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { MarkdownExampleComponent } from './markdown/examples/markdown-example.component';
+import { MessageExampleComponent } from './message/examples/message-example.component';
 import { SlideOutExampleComponent } from './slide-out-panel/examples/slide-out-example.component';
 import {
   GitHubLinkAreaExampleComponent
@@ -24,7 +25,11 @@ const routes: Routes = [{
   }, {
     path: 'github-link-area',
     component: GitHubLinkAreaExampleComponent
-  }];
+  }, {
+    path: 'message',
+    component: MessageExampleComponent
+  }
+];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

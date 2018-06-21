@@ -1,0 +1,14 @@
+<div class="editor-box editor-preview markdown-rendered"
+  *ngIf="message.length || ( message.changingThisBreaksApplicationSecurity && message.changingThisBreaksApplicationSecurity.length )">
+  <github-link-area [content]="message" (onInputEvent)="onInputEvent($event)"></github-link-area>
+</div>
+<div
+  *ngIf="!message.length"
+  class="editor-box editor-preview placeholder">
+    {{ placeholder }}
+</div>
+<message-action
+  [msgReplyAction]="msgReplyAction"
+  [msgEditAction]="msgEditAction"
+  [msgDeleteAction]="msgDeleteAction">
+</message-action>
